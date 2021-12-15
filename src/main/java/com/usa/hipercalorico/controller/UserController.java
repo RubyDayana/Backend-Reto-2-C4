@@ -63,7 +63,7 @@ public class UserController {
         return userService.delete(id);
     }
 
-    @PostMapping("/emailexist/{email}")
+    @GetMapping("/emailexist/{email}")
     public boolean emailExist(@PathVariable("email") String email) {
         return userService.emailExist(email);
     }
